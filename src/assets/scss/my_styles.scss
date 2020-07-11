@@ -1,0 +1,169 @@
+#app > h1 {
+  font-size: 34px;
+  opacity: 0.5;
+  text-align: right;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.controls span {
+  padding: 5px 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 0 10px;
+  opacity: 0.5;
+}
+
+.controls span:hover {
+  position: relative;
+  bottom: 1px;
+}
+
+.new-note {
+  label {
+    text-align: left;
+    font-size: 18px;
+  }
+  input, textarea {
+    font-size: 24px;
+  }
+  margin-bottom: 50px;
+}
+
+::-webkit-input-placeholder {color: #c05e57;}
+::-moz-placeholder          {color: #c05e57;}
+:-ms-input-placeholder      {color: #c05e57;}
+
+.note-title {
+  color: #494ce8;
+  font-size: 34px;
+}
+
+.note-date {
+  text-align: right;
+}
+
+.notes {
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.note {
+  margin: 10px 0;
+  padding: 20px;
+  border: 1px solid #b4afa9;
+  border-radius: 10px;
+  width: 45%;
+}
+
+.full {
+  width: 100%;
+}
+
+.delete {
+  float: right;
+  opacity: 0.5;
+}
+
+.delete:hover {
+  color: #494ce8;
+  position: relative;
+  bottom: 1px;
+}
+
+.btn:hover {
+  position: relative;
+  top: 1px;
+}
+
+.note-date {
+  font-size: 14px;
+  opacity: 0.5;
+  text-align: right;
+}
+
+.note-text, .note-title {
+  word-break: break-all;
+}
+
+textarea {
+  font-family: "Helvetica", "sans-serif";
+}
+
+.form-radio {
+  margin-top: 20px;
+  display: flex;
+}
+
+.form-radio input{
+  display: none;
+}
+
+.form-radio label {
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 100%;
+}
+
+.form-radio label:hover {
+  position: relative;
+  bottom: 1px;
+}
+
+.forms {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.light {
+  background-color: #d0cd5f;
+}
+
+.regular {
+  background-color: #66d063;
+}
+
+.deep {
+  background-color: #d05e6c;
+}
+
+.note {
+  &.light {
+    border: 2px solid #d0cd5f;
+    background-color: white;
+  }
+
+  &.regular {
+    border: 2px solid #66d063;
+    background-color: white;
+  }
+
+  &.deep {
+    border: 2px solid #d05e6c;
+    background-color: white;
+  }
+}
+
+.controls .active {
+  color: #494ce8;
+  opacity: 1;
+}
+
+.activeRadio {
+  background-color: #494ce8;
+}
+
+.my-wrapper {
+  ::-webkit-input-placeholder {color: #a5a5a5;}
+  ::-moz-placeholder          {color: #a5a5a5;}
+  :-ms-input-placeholder      {color: #a5a5a5;}
+}
