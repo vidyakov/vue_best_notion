@@ -1,7 +1,7 @@
 <template>
     <div class="notes">
         <div class="note" :class="[note.priority, {full: active}]" v-for="(note, index) in notes">
-            <span @click="remove(index)" class="delete">x</span>
+            <span @click="$store.dispatch('removeNote', index)" class="delete">x</span>
             <!--Title-->
             <h3
                     class="note-title"
@@ -49,9 +49,6 @@
             }
         },
         methods: {
-            remove(index) {
-                this.$emit('remove', index)
-            },
             makeDefaultEditing() {
                 this.notes.forEach((note) => {
                     note.editing_text = false;
